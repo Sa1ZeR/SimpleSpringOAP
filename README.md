@@ -8,6 +8,10 @@
 - PostgreSQl
 - Swagger
 
+## Инструкция по запуску
+- Если у вас не установлен postgre или желаете запустить СУБД с созданной бд, то выполните команду docker-compose up для поднятия образа с postgre
+- Запустите приложение через вашу среду разработки или же воспользуйтесь готовыми тестами контроллеров, которые расположены тут: https://github.com/Sa1ZeR/SimpleSpringOAP/tree/master/src/test/java/com/sa1zer/botcamp7/api
+
 ## Информация по endpoint'ам доступна здесь:
 http://localhost:3000/swagger-ui/index.html#/
 
@@ -24,5 +28,3 @@ http://localhost:3000/swagger-ui/index.html#/
 
 - создан и настроен log4j2 файл
 - все логи пишутся в консоль, а также в файл, который сохраняется в папке logs
-- 
-## Инструкция по запуску
