@@ -1,0 +1,31 @@
+server:
+  port: 3000
+  error:
+    include-message: always
+
+logging:
+  file:
+    name: logs.log
+  logback:
+    rollingpolicy:
+      max-file-size: 100MB
+
+spring:
+  application:
+    name: botcamp7
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        hbm2ddl:
+          import_files:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        show_sql: false
+        format_sql: false
+  datasource:
+    url: jdbc:postgresql://${POSTGRES_HOST:localhost}:${POSTGRES_PORT:5432}/${POSTGRES_DB:bootcamp7}
+    username: ${POSTGRES_NAME:postgres}
+    password: ${POSTGRES_PASSWORD:123456}
+
